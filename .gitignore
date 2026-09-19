@@ -1,0 +1,20 @@
+# Diretório de saída (onde o Makefile provavelmente joga os executáveis)
+output/
+
+# Arquivos objeto e executáveis genéricos
+*.o
+*.out
+*.exe
+*.dll
+*.so
+*.a
+
+# Ignora apenas configurações pessoais do VS Code e cache do IntelliSense
+.vscode/settings.json
+.vscode/ipch/
+.vscode/*.db
+.vscode/.suo
+
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
