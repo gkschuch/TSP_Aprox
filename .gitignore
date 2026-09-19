@@ -3,6 +3,7 @@ output/
 
 # Arquivos objeto e executáveis genéricos
 *.o
+*.d
 *.out
 *.exe
 *.dll
