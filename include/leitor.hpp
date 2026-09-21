@@ -1,5 +1,5 @@
-#ifndef LEITOR_H
-#define LEITOR_H
+#ifndef LEITOR_HPP
+#define LEITOR_HPP
 #include <string>
 #include <vector>
 

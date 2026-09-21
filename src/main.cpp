@@ -1,5 +1,6 @@
 #include "leitor.hpp"
 #include "aproximativo.hpp"
+#include "exato.hpp"
 #include <iostream>
 #include <chrono>
 
@@ -26,6 +27,18 @@ int main(int argc, char *argv[]) {
 
   std::cout << "\n\t||| aproximativo: |||\n";
   std::cout << "custo: " << custoAprox << "\n";
+  std::cout << "tempo: " << tempo.count() << " segundos\n";
+
+  double limiteSegundos = 180.0;
+  inicio = high_resolution_clock::now();
+
+  int custoExato = executarExato(matriz, limiteSegundos);
+
+  fim = high_resolution_clock::now();
+  tempo = fim - inicio;
+
+  std::cout << "\n\t||| exato: |||\n";
+  std::cout << "custo: " << custoExato << "\n";
   std::cout << "tempo: " << tempo.count() << " segundos\n";
 
   return 0;
