@@ -97,3 +97,11 @@ clean:
 run: all
 	./$(OUTPUTMAIN)
 	@echo Executing 'run: all' complete!
+
+run_all: all
+	@for arquivo in graphs/*.txt; do \
+		echo "==================================="; \
+		echo "Processando: $$arquivo"; \
+		./$(OUTPUTMAIN) $$arquivo; \
+	done
+	@echo Executing 'run_all' complete!
